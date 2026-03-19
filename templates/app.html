@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Analyzer</title>
+</head>
+<body>
+
+    <h2>Welcome, {{ username }}</h2>
+
+    <p>What sector do you want to analyze?</p>
+
+    <form method="get" action="/analyze">
+        <input type="text" name="sector" placeholder="e.g. pharmaceuticals">
+        <button type="submit">Analyze</button>
+    </form>
+
+</body>
+</html>

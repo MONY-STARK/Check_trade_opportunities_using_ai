@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ sector }} Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body { font-family: Arial; max-width: 900px; margin: 40px auto; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        a { display: inline-block; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <a href="/app">← Back</a>
+    <a href="/download/{{ sector }}">⬇ Download .md</a>
+
+    <div id="report"></div>
+
+
+    <div id="raw-report" style="display:none;">{{ report }}</div>
+
+    <script>
+        const raw = document.getElementById("raw-report").textContent;
+        document.getElementById("report").innerHTML = marked.parse(raw);
+    </script>
+
+</body>
+</html>
