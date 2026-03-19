@@ -45,7 +45,7 @@ trade_opportunities/
 ├── pipeline.py             ← Data collection + Gemini analysis
 ├── auth_data.py            ← Authentication logic
 ├── user_data.py            ← User session & data model
-├── .env                    ← API keys (never commit this)
+├── .env                    ← API keys 
 ├── requirements.txt        ← Python dependencies
 │
 └── templates/
@@ -63,8 +63,8 @@ trade_opportunities/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/trade-opportunities.git
-cd trade-opportunities
+git clone https://github.com/MONY-STARK/Check_trade_opportunities_using_ai
+cd Check_trade_opportunities_using_ai
 ```
 
 ### 2. Create a Virtual Environment
@@ -100,7 +100,7 @@ Create a file called `.env` in the project root:
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-> ⚠️ Never commit this file to GitHub. It is already in `.gitignore`.
+>
 
 ### 6. Run the App
 
